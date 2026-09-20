@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/cn";
 import { CloseIcon, MenuIcon } from "@/components/ui/icons";
+import { Logo } from "@/components/layout/Logo";
 
 const NAV_ITEMS = [
   { label: "Overview", href: "/overview" },
@@ -31,18 +32,14 @@ export function GlobalNav() {
       <div className="mx-auto flex h-14 max-w-[1180px] items-center gap-3 px-5 sm:px-6 lg:gap-6 lg:px-8">
         <Link
           href="/expert-match/requests"
-          className="
-            flex shrink-0 items-center gap-2 rounded-xs text-[13.5px] font-semibold
-            whitespace-nowrap tracking-[-0.01em] text-ink lg:gap-2.5 lg:text-[14.5px]
-          "
+          aria-label="Expert Match — home"
+          className="flex shrink-0 items-center rounded-xs"
         >
-          <span
-            aria-hidden="true"
-            className="inline-flex size-6 items-center justify-center rounded-[5px] bg-accent text-[11px] font-semibold text-white"
-          >
-            E
-          </span>
-          Expert Match
+          <Logo
+            markClassName="h-[22px] lg:h-6"
+            wordmarkClassName="text-[14.5px] lg:text-[16px]"
+            className="gap-2 lg:gap-2.5"
+          />
         </Link>
 
         <nav aria-label="Main" className="hidden shrink-0 md:block">

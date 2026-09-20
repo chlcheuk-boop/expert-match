@@ -40,7 +40,7 @@ export function CommunityRequestCard({ request }: CommunityRequestCardProps) {
               </ul>
             )}
 
-            <section className="mt-4 border-l-2 border-accent-line pl-3.5">
+            <section className="mt-4 border-l-2 border-gold pl-3.5">
               <h4 className="label-eyebrow text-ink-tertiary">What came of it</h4>
               <p className="mt-1.5 text-[13.5px] leading-relaxed text-ink">
                 {request.outcome}

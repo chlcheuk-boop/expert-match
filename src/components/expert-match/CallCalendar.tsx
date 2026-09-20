@@ -122,7 +122,7 @@ export function CallCalendar({
                     isSelected
                       ? "bg-white"
                       : hasUpcoming
-                        ? "bg-accent"
+                        ? "bg-gold"
                         : "bg-ink-tertiary",
                   )}
                 />
@@ -134,7 +134,7 @@ export function CallCalendar({
 
       <div className="mt-3.5 flex flex-wrap items-center gap-x-4 gap-y-1.5 border-t border-line pt-3 text-[11.5px] text-ink-secondary">
         <span className="inline-flex items-center gap-1.5">
-          <span aria-hidden="true" className="size-1.5 rounded-full bg-accent" />
+          <span aria-hidden="true" className="size-1.5 rounded-full bg-gold" />
           Upcoming
         </span>
         <span className="inline-flex items-center gap-1.5">

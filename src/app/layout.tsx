@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import { GlobalNav } from "@/components/layout/GlobalNav";
 import "./globals.css";
 
-const inter = Inter({
+// The logo wordmark is set in Montserrat; the interface follows it.
+const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-montserrat",
   display: "swap",
 });
 
@@ -22,7 +23,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={montserrat.variable}>
       <body className="min-h-dvh bg-canvas antialiased">
         <a
           href="#main"
